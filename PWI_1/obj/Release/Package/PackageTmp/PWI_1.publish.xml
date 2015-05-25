@@ -1,0 +1,9 @@
+<publishData>
+  <publishProfile
+    publishUrl="https://damianrogal-001-site1.smarterasp.net:8172/msdeploy.axd"
+    msdeploySite="damianrogal-001-site1"
+    destinationAppUrl="http://damianrogal-001-site1.smarterasp.net/"
+    profileName="Default Settings"
+    publishMethod="MSDeploy"
+    userName="ifc\damianrogal-001" />
+</publishData>

@@ -1,0 +1,24 @@
+﻿@model PWI_1.Models.LoginModel
+@{
+    ViewBag.Title = "Przykładowa strona";
+}
+
+<div id="main-content">
+@if (@User.Identity.IsAuthenticated)
+{
+    @Html.Partial("_MainPage")
+}
+else
+{
+    @Html.Partial("_StartingPage")
+}
+</div>
+
+@if (@User.Identity.IsAuthenticated)
+{
+    @section scripts {
+        @Scripts.Render("~/bundles/knockout")
+        @Scripts.Render("~/bundles/jqueryval")
+        @Scripts.Render("~/bundles/todo")
+    }
+}

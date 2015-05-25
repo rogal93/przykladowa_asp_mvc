@@ -1,0 +1,349 @@
+.showLogin {
+    color: white;
+}
+
+#header_login {
+    font-size: 32px;
+}
+
+input[type=text] {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+input[type=password] {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+button, input[type=submit] {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border: 1px solid #42dca3;
+    color: #42dca3;
+    background-color: transparent;
+    margin-left: 30px;
+}
+
+button:hover, input[type=submit]:hover,
+button:focus, input[type=submit]:focus {
+    border: 1px solid #42dca3;
+    outline: 0;
+    color: #000;
+    background-color: #42dca3;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#userSettings {
+    float: right;
+}
+
+    #userSettings > form:before {
+        content: ' | ';
+    }
+
+    #userSettings form {
+        display: inline;
+    }
+
+#menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+    #menu li {
+        display: inline-block;
+    }
+
+    #menu li:not(:first-child) {
+        margin-left: .8em;
+    }
+
+#changePasswordForm input,
+#registerForm input,
+#loginForm input {
+    border: 1px solid #dedede;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+    #changePasswordForm input[type=text], #changePasswordForm input[type=password],
+    #registerForm input[type=text], #registerForm input[type=password],
+    #loginForm input[type=text], #loginForm input[type=password] {
+        background: white;
+        width: 220px;
+    }
+
+#loginForm input[type=checkbox]{
+    border: none;
+}
+
+#changePasswordForm input[type=submit] {
+    margin-bottom: .8em;
+}
+
+#registerPanel{
+    display: none;
+    position: relative;
+    float: left;
+    text-align: left;
+    padding: 50px;
+}
+
+#loginPanel {
+    display: block;
+    position: relative;
+    float: left;
+    text-align: left;
+    padding: 50px;
+}
+
+#registerPanel h2,
+#loginPanel h2 {
+    padding-bottom: .5em;
+    margin: 0;
+}
+
+#registerPanel a,
+#loginPanel a {
+    color: navy;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#registerPanel p,
+#loginPanel p {
+    clear: both;
+}
+
+/*#localLoginPanel {
+    border-right: solid 2px #c8c8c8;
+    float: left;
+    width: 45%;
+    text-align: left;
+}*/
+
+/*#socialLoginPanel {
+    margin-left: 40px;
+    float: left;
+    width: 45%;
+    text-align: left;
+}
+
+    #socialLoginPanel h2 {
+        margin-bottom:  5px;
+    }*/
+
+#socialLoginList button {
+    margin-bottom: 12px;
+}
+
+
+fieldset {
+    border: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    display: inline;
+}
+
+    fieldset legend {
+        display: none;
+    }
+
+    fieldset label:not(.checkbox) {
+        display: block;
+        text-align: left;
+    }
+
+    fieldset ol {
+        padding: 0;
+        margin: 0 0 8px 0;
+        list-style: none;
+    }
+
+        fieldset ol li {
+            padding-bottom: 5px;
+        }
+
+ol.round {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#main-content {
+    min-height: 400px;
+    text-align: center;
+}
+
+.error {
+    float: none;
+    color: red;
+    padding-left: .5em;
+    vertical-align: top;
+}
+
+.validation-summary-errors {
+    color: red;
+    list-style: none;
+    width: 220px;
+    font-size: .8em;
+}
+
+.validation-summary-errors ul{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+#unauthorized {
+    margin: 3em 0;
+    text-align: center;
+}
+
+    #unauthorized ul {
+        list-style: none;
+        padding: 0;
+        margin: 3em 0;
+    }
+
+    #unauthorized li {
+        display: inline-block;
+        padding: 6px 20px;
+        background-color: #dedede;
+        border: 1px solid gray;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+        #unauthorized li:first-child {
+            margin-right: 2em;
+        }
+
+footer {
+    clear: both;
+    margin: 5em 5em .7em 0;
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        margin: .2em 0;
+    }
+
+    header {
+        text-align: center;
+        clear: both;
+    }
+}
+
+#main {
+    width: 100%;
+}
+#main_inner {
+    margin: 0 auto;
+}
+
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0 50px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../images/intro-bg.png) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.btn-default {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #fff;
+    outline: 0;
+    color: #000;
+    background-color: #fff;
+}
+
+h3 {
+    padding-top: 50px;
+}
+
+#gameContainer {
+    text-align: center;
+}
+
+
+td {
+    background-color: grey;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #000;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-align: center;
+    vertical-align: middle;
+    color: #000;
+    
+}
+
+td:hover 
+{
+    background-color: #fff;
+    color: white;
+    border-radius: 40px;
+    transition: 0.5s linear;
+}
+
+#login {
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+#tictactoe {
+    padding-top: 150px;
+}
+#description {
+    padding-top: 50px;
+}
+#download {
+    padding-top: 400px;
+}
+#manage_header{
+    padding-top: 30px;
+    padding-left:30px;
+}
+
+#sepia {
+    background: url(../images/forest-bg.jpg) no-repeat bottom center scroll;
+}
+
+#userSettings {
+    padding-top: 10px;
+}

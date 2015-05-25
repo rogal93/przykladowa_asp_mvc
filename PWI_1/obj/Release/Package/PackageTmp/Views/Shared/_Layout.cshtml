@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Damian Roguski</title>
+    <link href="@Url.Content("~/Content/images/ikona.ico")" rel="shortcut icon" type="image/x-icon" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Custom Fonts -->
+    <link href="@Url.Content("~/Content/css/font-awesome.min.css")" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+
+    @Styles.Render("~/Content/css/styles")
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    @RenderBody()
+
+    <footer>
+        <div class="container text-center">
+            <p>Damian Roguski, WZiM SGGW - Programowanie w internecie @DateTime.Now.Year</p>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/ajaxlogin")
+    @RenderSection("scripts", required: false)
+    @Scripts.Render("~/Content/js/jsy")
+
+</body>
+</html>

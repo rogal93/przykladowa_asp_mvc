@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="rogal" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Damian\\Documents\\Visual\ Studio\ 2013\\Projects\\PWI_1\\PWI_1\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Damian\\Documents\\Visual\ Studio\ 2013\\Projects\\PWI_1\\PWI_1\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=tcp:c1kcs979qe.database.windows.net,1433;Initial Catalog=rogal-pwi736;User Id=rogal@c1kcs979qe;Password=Misiekmoj1" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Damian\\Documents\\Visual\ Studio\ 2013\\Projects\\PWI_1\\PWI_1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

@@ -1,0 +1,24 @@
+﻿<header class="intro" id="sepia">
+    <div class="intro-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div id="main">
+                        <div id="main_inner">
+                            <div id="loginPanel">
+                                <h2 id="header_login">Logowanie</h2>
+                                @Html.Partial("_Login")
+                                <p id="first_log">Pierwszy raz na stronie?<br /> <a id="showRegister" style="color: white; padding-left: 30px;">Zarejestruj się</a></p>
+                            </div>
+                            <div id="registerPanel">
+                                <h2>Rejestracja</h2>
+                                @Html.Partial("_Register")
+                                <p>   Już zarejestrowany?<br /> <a id="showLogin" style="color: white; padding-left: 40px;">Zaloguj się</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

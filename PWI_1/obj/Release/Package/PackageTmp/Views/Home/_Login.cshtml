@@ -1,0 +1,26 @@
+﻿@model PWI_1.Models.LoginModel
+
+@using (Html.BeginForm("JsonLogin", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { id = "loginForm" }))
+{
+    @Html.AntiForgeryToken()
+
+    <fieldset>
+        <legend>   Logowanie</legend>
+        <ol>
+            <li>
+                @Html.LabelFor(m => m.UserName)
+                @Html.TextBoxFor(m => m.UserName, new { autofocus = "autofocus", id = "loginName" })
+                @Html.ValidationMessageFor(m => m.UserName)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.Password)
+                @Html.PasswordFor(m => m.Password)
+                @Html.ValidationMessageFor(m => m.Password)
+            </li>
+            <li>
+                <input type="submit" value="Zaloguj" />
+            </li>
+        </ol>
+        @Html.ValidationSummary() 
+    </fieldset>
+}
